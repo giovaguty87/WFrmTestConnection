@@ -5,8 +5,11 @@ La solucion de informacion personal consta de dos proyectos asi:
 
 1- Interfaz grafica o de usuario la cual esta compuesta por datos basicos, como Nombre, Apellidos, Direccion, Telefono y Correo electronico
    los cuales se validan al iniciar la aplicacion para que no esten vacios.
+
+	1.1- Formulario para mostrar datos de informacion personal almacenada en base de datos. El usuario a traves de un boton abre un segundo formulario el cual
+		 tiene un GridView para mostrar dicha informacion.
    
-2- Proyecto de conexion a la base de datos SQL Server, en este proyecto existe un metodo publico el cual crea e instancia los objetos necesarios
+3- Proyecto de conexion a la base de datos SQL Server, en este proyecto existe un metodo publico el cual crea e instancia los objetos necesarios
    para realizar la conexion y enviar los datos que recibe por parametros a la tabla Person de la base de datos Global.
    
 En la carpeta ReadMe del proyecto encontrara un script de base de datos el cual debe ser ejecutado antes de proceder a utilizar la aplicacion, asi como tambien un archivo
