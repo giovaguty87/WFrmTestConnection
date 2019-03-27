@@ -28,7 +28,6 @@ namespace WFrmTestConnection
             }
             catch (Exception)
             {
-
                 throw;
             }          
         }
