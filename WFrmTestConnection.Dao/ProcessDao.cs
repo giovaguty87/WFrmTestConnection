@@ -39,6 +39,10 @@ namespace WFrmTestConnection.Dao
 
                 return resp;
             }
+            catch (SqlException)
+            {
+                throw;
+            }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
@@ -70,6 +74,10 @@ namespace WFrmTestConnection.Dao
 
                     return ds;
                 }
+            }
+            catch (SqlException)
+            {
+                throw;
             }
             catch (Exception)
             {

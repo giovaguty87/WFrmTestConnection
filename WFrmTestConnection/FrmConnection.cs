@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using WFrmTestConnection.Dao;
 
@@ -33,6 +34,10 @@ namespace WFrmTestConnection
                         ClearInformation();
                     }   
                 }
+            }
+            catch (SqlException)
+            {
+                this.lblResponse.Text = "Error, Please check your connection to the database...!";
             }
             catch (Exception)
             {
