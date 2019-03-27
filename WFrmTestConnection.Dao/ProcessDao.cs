@@ -49,7 +49,6 @@ namespace WFrmTestConnection.Dao
         public DataSet GetPersonalData()
         {
             DataSet ds = new DataSet();
-            List<string> personalData = new List<string>();
 
             try
             {
