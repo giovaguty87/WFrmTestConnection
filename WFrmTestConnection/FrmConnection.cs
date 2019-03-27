@@ -64,5 +64,11 @@ namespace WFrmTestConnection
             this.txtBoxPhone.Text = string.Empty;
             this.txtBoxEmail.Text = string.Empty;
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FrmShowData frmShow = new FrmShowData();
+            frmShow.Show();
+        }
     }
 }

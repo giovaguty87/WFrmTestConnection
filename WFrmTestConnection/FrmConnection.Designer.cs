@@ -30,18 +30,19 @@
         {
             this.LblName = new System.Windows.Forms.Label();
             this.grpBoxPersonalData = new System.Windows.Forms.GroupBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtBoxPhone = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.txtBoxAddress = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtBoxLastName = new System.Windows.Forms.TextBox();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.txtBoxName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtBoxName = new System.Windows.Forms.TextBox();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.txtBoxLastName = new System.Windows.Forms.TextBox();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.txtBoxAddress = new System.Windows.Forms.TextBox();
-            this.lblPhone = new System.Windows.Forms.Label();
-            this.txtBoxPhone = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.lblResponse = new System.Windows.Forms.Label();
+            this.btnShow = new System.Windows.Forms.Button();
             this.grpBoxPersonalData.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,82 +75,12 @@
             this.grpBoxPersonalData.TabStop = false;
             this.grpBoxPersonalData.Text = "Personal data";
             // 
-            // btnSave
+            // txtBoxEmail
             // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(475, 22);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(475, 51);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // txtBoxName
-            // 
-            this.txtBoxName.Location = new System.Drawing.Point(83, 33);
-            this.txtBoxName.Name = "txtBoxName";
-            this.txtBoxName.Size = new System.Drawing.Size(282, 22);
-            this.txtBoxName.TabIndex = 1;
-            // 
-            // lblLastName
-            // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(6, 66);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(78, 16);
-            this.lblLastName.TabIndex = 2;
-            this.lblLastName.Text = "LastName";
-            // 
-            // txtBoxLastName
-            // 
-            this.txtBoxLastName.Location = new System.Drawing.Point(83, 63);
-            this.txtBoxLastName.Name = "txtBoxLastName";
-            this.txtBoxLastName.Size = new System.Drawing.Size(282, 22);
-            this.txtBoxLastName.TabIndex = 3;
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(6, 100);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(66, 16);
-            this.lblAddress.TabIndex = 4;
-            this.lblAddress.Text = "Address";
-            // 
-            // txtBoxAddress
-            // 
-            this.txtBoxAddress.Location = new System.Drawing.Point(83, 94);
-            this.txtBoxAddress.Name = "txtBoxAddress";
-            this.txtBoxAddress.Size = new System.Drawing.Size(282, 22);
-            this.txtBoxAddress.TabIndex = 5;
-            // 
-            // lblPhone
-            // 
-            this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(6, 135);
-            this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(52, 16);
-            this.lblPhone.TabIndex = 6;
-            this.lblPhone.Text = "Phone";
-            // 
-            // txtBoxPhone
-            // 
-            this.txtBoxPhone.Location = new System.Drawing.Point(83, 129);
-            this.txtBoxPhone.Name = "txtBoxPhone";
-            this.txtBoxPhone.Size = new System.Drawing.Size(282, 22);
-            this.txtBoxPhone.TabIndex = 7;
+            this.txtBoxEmail.Location = new System.Drawing.Point(83, 167);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(282, 22);
+            this.txtBoxEmail.TabIndex = 9;
             // 
             // lblEmail
             // 
@@ -160,12 +91,82 @@
             this.lblEmail.TabIndex = 8;
             this.lblEmail.Text = "Email";
             // 
-            // txtBoxEmail
+            // txtBoxPhone
             // 
-            this.txtBoxEmail.Location = new System.Drawing.Point(83, 167);
-            this.txtBoxEmail.Name = "txtBoxEmail";
-            this.txtBoxEmail.Size = new System.Drawing.Size(282, 22);
-            this.txtBoxEmail.TabIndex = 9;
+            this.txtBoxPhone.Location = new System.Drawing.Point(83, 129);
+            this.txtBoxPhone.Name = "txtBoxPhone";
+            this.txtBoxPhone.Size = new System.Drawing.Size(282, 22);
+            this.txtBoxPhone.TabIndex = 7;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(6, 135);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(52, 16);
+            this.lblPhone.TabIndex = 6;
+            this.lblPhone.Text = "Phone";
+            // 
+            // txtBoxAddress
+            // 
+            this.txtBoxAddress.Location = new System.Drawing.Point(83, 94);
+            this.txtBoxAddress.Name = "txtBoxAddress";
+            this.txtBoxAddress.Size = new System.Drawing.Size(282, 22);
+            this.txtBoxAddress.TabIndex = 5;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(6, 100);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(66, 16);
+            this.lblAddress.TabIndex = 4;
+            this.lblAddress.Text = "Address";
+            // 
+            // txtBoxLastName
+            // 
+            this.txtBoxLastName.Location = new System.Drawing.Point(83, 63);
+            this.txtBoxLastName.Name = "txtBoxLastName";
+            this.txtBoxLastName.Size = new System.Drawing.Size(282, 22);
+            this.txtBoxLastName.TabIndex = 3;
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Location = new System.Drawing.Point(6, 66);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(78, 16);
+            this.lblLastName.TabIndex = 2;
+            this.lblLastName.Text = "LastName";
+            // 
+            // txtBoxName
+            // 
+            this.txtBoxName.Location = new System.Drawing.Point(83, 33);
+            this.txtBoxName.Name = "txtBoxName";
+            this.txtBoxName.Size = new System.Drawing.Size(282, 22);
+            this.txtBoxName.TabIndex = 1;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(475, 22);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(96, 23);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(475, 80);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(96, 23);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblResponse
             // 
@@ -176,11 +177,23 @@
             this.lblResponse.Size = new System.Drawing.Size(451, 47);
             this.lblResponse.TabIndex = 4;
             // 
+            // btnShow
+            // 
+            this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShow.Location = new System.Drawing.Point(475, 51);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(94, 23);
+            this.btnShow.TabIndex = 5;
+            this.btnShow.Text = "Show data";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            // 
             // FrmConnection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 300);
+            this.ClientSize = new System.Drawing.Size(581, 300);
+            this.Controls.Add(this.btnShow);
             this.Controls.Add(this.lblResponse);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
@@ -211,5 +224,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblResponse;
+        private System.Windows.Forms.Button btnShow;
     }
 }

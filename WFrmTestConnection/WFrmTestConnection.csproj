@@ -53,10 +53,19 @@
     <Compile Include="FrmConnection.Designer.cs">
       <DependentUpon>FrmConnection.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmShowData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowData.Designer.cs">
+      <DependentUpon>FrmShowData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmConnection.resx">
       <DependentUpon>FrmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowData.resx">
+      <DependentUpon>FrmShowData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

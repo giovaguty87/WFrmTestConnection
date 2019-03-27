@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -8,7 +9,7 @@ namespace WFrmTestConnection.Dao
 {
     public class ProcessDao
     {
-        private SqlConnection cn;
+        private SqlConnection cn;        
         private string conn = ConfigurationManager.AppSettings["ProcessTestDaoConnString"];
 
         public ProcessDao()
@@ -42,6 +43,39 @@ namespace WFrmTestConnection.Dao
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        public DataSet GetPersonalData()
+        {
+            DataSet ds = new DataSet();
+            List<string> personalData = new List<string>();
+
+            try
+            {
+                string cmdText = "select Name,LastName,Address, Phone, Email from [dbo].[Person]";
+
+                using (cn = new SqlConnection(this.conn))
+                {
+                    SqlCommand cmd = new SqlCommand(cmdText, cn);
+
+                    cmd.CommandType = CommandType.Text;
+
+                    if (cn.State != ConnectionState.Open)
+                        cn.Open();
+
+                    SqlDataAdapter da = new SqlDataAdapter();
+
+                    da.SelectCommand = cmd;
+
+                    da.Fill(ds);
+
+                    return ds;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }
