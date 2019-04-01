@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -55,7 +56,7 @@ namespace WFrmTestConnection.Dao
 
             try
             {
-                string cmdText = "select Name,LastName,Address, Phone, Email from [dbo].[Person]";
+                string cmdText = "select Id,Name,LastName,Address, Phone, Email from [dbo].[Person]";
 
                 using (cn = new SqlConnection(this.conn))
                 {
@@ -81,6 +82,42 @@ namespace WFrmTestConnection.Dao
             }
             catch (Exception)
             {
+                throw;
+            }
+        }
+
+        public int DeletePersonalData(List<string> lstSelected)
+        {
+            int resp = 0;
+
+            try
+            {
+                foreach(var record in lstSelected)
+                {
+                    string cmdText = "delete from [dbo].[Person] where id = '" + record + "' ";
+
+                    using (cn = new SqlConnection(this.conn))
+                    {
+                        SqlCommand cmd = new SqlCommand(cmdText, cn);
+
+                        cmd.CommandType = CommandType.Text;
+
+                        if (cn.State != ConnectionState.Open)
+                            cn.Open();
+
+                        resp = cmd.ExecuteNonQuery();
+                    }
+                }                
+
+                return resp;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }
